@@ -1,1 +1,4 @@
-web : gunicorn Eshop.wsgi --log-file -
+
+web: gunicorn Eshop.wsgi:application --log-file - --log-level debug
+heroku ps:scale web=1
+
