@@ -122,7 +122,7 @@ USE_TZ = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "/image/download/"
-MEDIA_ROOT = BASE_DIR
+MEDIA_ROOT = BASE_DIR/'uploaads/products'
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
